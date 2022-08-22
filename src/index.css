@@ -1,13 +1,201 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    width: full;
+    padding: 0px;
+    margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+    background-color: #008ab0;
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
+    margin-right: -5px;
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 67px;
+}
+
+.input-form {
+    /* height: 350px; */
+    height: auto;
+    /* width: 98.5%; */
+    position: relative;
+    border: 2px solid #cdd0d2;
+    border-radius: 5px;
+    padding-top: -15px;
+    padding-left: 10px;
+    margin: 5px;
+    margin-top: 15px;
+    /* display: table;
+    content: "";
+    clear: both; */
+}
+
+.input-box {
+    text-align: center;
+}
+
+.database-option-dropdown {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-detail {
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    text-align: right;
+    padding-bottom: 7px;
+}
+
+#dropdown-menu {
+    background-color: #cdd0d2;
+    padding: 5px;
+}
+
+/* .table-container {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+} */
+
+#output {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border-collapse: collapse;
+    /* width: 100%; */
+    /* padding-top: -15px;
+    padding-left: 10px; */
+    margin: auto;
+    /* margin-top: 15px; */
+}
+
+#output td,
+#output th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#output tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#output tr:hover {
+    background-color: #ddd;
+}
+
+#output th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008ab0;
+    color: white;
+}
+
+/* Style the tooltip - describe more infprmation about class stading input */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted #e2e4e5; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #e2e4e5;
+    color: rgb(95, 95, 95);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 110%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #e2e4e5 transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Style the buttons */
+.button-container {
+    position: relative;
+    margin-left: -50px;
+    margin-top: 30px;
+    left: 41%;
+    bottom: 10px;
+}
+
+button:active {
+    background: #D50032;
+    color: white;
+}
+
+button:focus {
+    background: #D50032;
+    color: white;
+}
+
+button {
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    padding: 5px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.output {
+    margin-top: 30px;
+    height: 600px;
+    overflow: auto;
+}
+
+/*  make the footer stays at the bottom of the page without interfering with .output */
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    background-color: #797979;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+}
+
+.radio-button-container {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.radio-button:after {
+    content: "";
+    display: table;
+    clear: both;
 }
